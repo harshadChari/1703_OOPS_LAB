@@ -8,7 +8,7 @@ public class Ball {
 		System.out.println("Ball is in motion");
 	}
 	
-	//getters & setters
+	//getters & setters-----------------
 	public Integer getSize() {
 		return size;
 	}
