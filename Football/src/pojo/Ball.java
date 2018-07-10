@@ -3,6 +3,7 @@ package pojo;
 public class Ball {
 	private Integer size;
 
+	//function moves ball
 	public void get_moved()
 	{
 		System.out.println("Ball is in motion");
