@@ -7,6 +7,16 @@ public class Player {
 	private String name;
 	private char gender;
 	
+public Player() {
+		
+		this.name = "";
+	}
+	
+	public Player(String name) {
+		
+		this.name = name;
+	}
+
 	public void run() 
 	{
 		System.out.println(this.getName() + "is running");

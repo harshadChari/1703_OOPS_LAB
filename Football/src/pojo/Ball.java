@@ -2,6 +2,20 @@ package pojo;
 
 public class Ball {
 	private Integer size;
+	
+	public Ball() {
+		
+		this.size = 15;
+		System.out.println("creating Ball .....");
+	}
+	
+	
+
+	public Ball(Integer size) {
+		this.size = size;
+	}
+
+
 
 	//function moves ball
 	public void get_moved()

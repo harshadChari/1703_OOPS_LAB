@@ -1,16 +1,27 @@
 package pojo;
 
 public class Goalpost {
-	private Integer height;
+	private Integer length;
 	private Integer width;
 	
 	
+	
+	
+	public Goalpost() {
+		this.length = 20;
+		this.width = 15;
+	}
+	public Goalpost(Integer height, Integer width) {
+		
+		this.length = height;
+		this.width = width;
+	}
 	//------getters & setters--------------
 	public Integer getHeight() {
-		return height;
+		return length;
 	}
 	public void setHeight(Integer height) {
-		this.height = height;
+		this.length = height;
 	}
 	public Integer getWidth() {
 		return width;

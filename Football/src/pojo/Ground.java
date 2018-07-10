@@ -8,7 +8,17 @@ public class Ground {
 	private Goalpost goalPostLeft;
 	private Goalpost goalPostRight;	
 	
+	public Ground() {
+			
+			this.length = 100;
+			this.width = 50;
+		}
 	
+	public Ground(Integer length, Integer width) {
+		
+		this.length = length;
+		this.width = width;
+	}
 	//----------getters & setters--------------
 	public Integer getLength() {
 		return length;
