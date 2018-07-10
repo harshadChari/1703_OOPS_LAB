@@ -10,11 +10,13 @@ public class Player {
 public Player() {
 		
 		this.name = "";
+		System.out.println("creating Player.....");
 	}
 	
 	public Player(String name) {
 		
 		this.name = name;
+		System.out.println("creating Player.....");
 	}
 
 	public void run() 
