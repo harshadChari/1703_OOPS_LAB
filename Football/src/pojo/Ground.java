@@ -12,12 +12,14 @@ public class Ground {
 			
 			this.length = 100;
 			this.width = 50;
+			System.out.println("creating Ground . . . ");
 		}
 	
 	public Ground(Integer length, Integer width) {
 		
 		this.length = length;
 		this.width = width;
+		System.out.println("creating Ground . . . ");
 	}
 	//----------getters & setters--------------
 	public Integer getLength() {

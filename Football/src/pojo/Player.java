@@ -16,17 +16,17 @@ public Player() {
 	public Player(String name) {
 		
 		this.name = name;
-		System.out.println("creating Player.....");
+		System.out.println("creating Player with name " + name + ". . .");
 	}
 
 	public void run() 
 	{
-		System.out.println(this.getName() + "is running");
+		System.out.println(this.getName() + " is running");
 	}
 
 	public void kick()
 	{
-		System.out.println(this.getName() + "kicked the ball");
+		System.out.println(this.getName() + " kicked the ball");
 	}
 	
 	

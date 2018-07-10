@@ -6,6 +6,14 @@ public class Stadium {
 	private Stand stands;
 	private Ground ground;
 	
+	public Stadium()
+	{
+		stands = new Stand();
+		ground = new Ground();
+		System.out.println("creating Stadium . . . ");
+		
+	}
+	
 	//gettrs & setters
 	public Stand getStands() {
 		return stands;

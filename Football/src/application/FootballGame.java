@@ -1,18 +1,34 @@
 package application;
 
+import pojo.Ball;
 import pojo.Player;
+import pojo.Stadium;
 
 public class FootballGame {
 
 	public static void main(String[] args) {
-		Player goalKeeper = new Player();
-		Player striker = new Player("Omkar");
+		System.out.println("Initializing . . . . .");
+		Stadium panajiStadium = new Stadium();
 		
-		System.out.println("Striker: " + striker.getName());
+		Player goalKeeper = new Player("Omkar");
+		Player striker1 = new Player("Dattesh");
+		Player striker2 = new Player("Pratik");
 		
-		goalKeeper.setName("Adinath");
+		Ball ball = new Ball();
 		
-		System.out.println("Goalkeeper: " + goalKeeper.getName());
+		System.out.println("\n------------------------------------------\n");
+		System.out.println("Team Details:");
+		System.out.println("Striker 1:" + striker1.getName());
+		System.out.println("Striker 2:" + striker2.getName());
+		System.out.println("GoalKeeper: " + goalKeeper.getName());
+		System.out.println("\n------------------------------------------\n");
+		striker1.kick();
+		ball.get_moved();
+		striker2.run();
+		striker2.kick();
+		
+		
+		
 	}
 
 }

@@ -5,10 +5,12 @@ public class Stand {
 
 	public Stand() {
 		this.noOfSeats = 500;
+		System.out.println("creating Stands with 500 seats . . .");
 	}
 	public Stand(Integer noOfSeats) {
-		super();
+		
 		this.noOfSeats = noOfSeats;
+		System.out.println("creating Stands");
 	}
 	//--------getters & setters-------------
 	
