@@ -71,5 +71,30 @@ public class Sorting {
 		System.out.println("\n===============================");
 	}
 	
+	public static void bSort(int []data)
+	{
+		int temp;
+		//--------Bubble sort-----------------
+				for(int i=0;i<data.length;i++)
+				{
+					for(int j=0;j<data.length - i - 1;j++)
+					{
+						if(data[j] > data[j + 1])
+						{
+							temp = data[j];
+							data[j] = data[j + 1];
+							data[j + 1] = temp;
+						}
+					}
+					
+				}
+				
+				System.out.println("===============================");
+				for(int i=0;i<data.length;i++)
+				{
+					System.out.print(data[i] + ", ");
+				}
+				System.out.println("\n===============================");
+	}
 	
 }
