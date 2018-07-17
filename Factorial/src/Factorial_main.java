@@ -8,6 +8,7 @@ public class Factorial_main {
 		System.out.println("Choose type:");
 		System.out.println("1:Simple");
 		System.out.println("2: Class");
+		System.out.println("3: Class static variable");
 		
 		int ch = in.nextInt();
 		switch(ch)
@@ -18,6 +19,9 @@ public class Factorial_main {
 		case 2:
 			classFactorial();
 			break;	
+		case 3:
+			staticClassFactorial();
+			break;		
 		}
 
 	}
@@ -48,6 +52,19 @@ public class Factorial_main {
 		fact.calcFactorial(number);
 		
 		System.out.println(number + "! = " + fact.getValue());
+		
+		
+	}
+	
+public static void staticClassFactorial() {
+		
+		System.out.println("Enter Number:");
+		int number = in.nextInt();
+		
+		
+		Factorial.calcStaticFactorial(number);
+		
+		System.out.println(number + "! = " + Factorial.getSvalue());
 		
 		
 	}
