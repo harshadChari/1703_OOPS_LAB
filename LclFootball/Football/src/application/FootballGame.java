@@ -1,6 +1,7 @@
 package application;
 
 import pojo.Ball;
+import pojo.GoalKeeper;
 import pojo.Player;
 import pojo.Stadium;
 
@@ -10,9 +11,11 @@ public class FootballGame {
 		System.out.println("Initializing . . . . .");
 		Stadium panajiStadium = new Stadium();
 		
-		Player goalKeeper = new Player("Omkar");
+		GoalKeeper goalKeeper = new GoalKeeper("Omkar");
 		Player striker1 = new Player("Dattesh");
 		Player striker2 = new Player("Pratik");
+		
+		
 		
 		Ball ball = new Ball();
 		
@@ -26,6 +29,10 @@ public class FootballGame {
 		ball.get_moved();
 		striker2.run();
 		striker2.kick();
+		
+		goalKeeper.run();
+		goalKeeper.passed();
+		goalKeeper.passed(striker1);
 		
 		
 		

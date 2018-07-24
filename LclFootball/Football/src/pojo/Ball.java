@@ -1,15 +1,13 @@
 package pojo;
 
-public class Ball {
+public class Ball extends Equipment{
 	private Integer size;
 	
 	public Ball() {
 		
 		this.size = 15;
 		System.out.println("creating Ball .....");
-	}
-	
-	
+	}	
 
 	public Ball(Integer size) {
 		this.size = size;
@@ -30,6 +28,12 @@ public class Ball {
 
 	public void setSize(Integer size) {
 		this.size = size;
+	}
+
+	@Override
+	public void acquire() {
+		System.out.println("Acquire ball ");
+		
 	}
 	
 	

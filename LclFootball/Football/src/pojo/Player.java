@@ -2,7 +2,7 @@ package pojo;
 
 import java.util.Date;
 
-public class Player {
+public class Player  {
 	private Date dob;
 	private String name;
 	private char gender;
